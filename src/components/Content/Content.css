@@ -1,0 +1,15 @@
+.blog-item-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer; }
+  .blog-item-box h2 {
+    display: block; }
+  .blog-item-box .blog-item {
+    display: flex;
+    margin-top: 20px; }
+    .blog-item-box .blog-item p {
+      padding-left: 10px; }
+
+/*# sourceMappingURL=Content.css.map */

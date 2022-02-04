@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+.about-me {
+  font-family: 'Kosugi Maru', sans-serif;
+  border: 2px solid #282c34;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.057);
+  padding: 5px;
+  line-height: 25px; }
+  .about-me h2 {
+    text-align: center;
+    letter-spacing: 3px; }
+  .about-me .about-logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px; }
+  .about-me h2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 5px !important; }
+
+.social-list {
+  display: flex;
+  justify-content: center; }
+
+/*# sourceMappingURL=AboutMe.css.map */
