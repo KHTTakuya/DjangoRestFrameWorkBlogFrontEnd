@@ -1,5 +1,6 @@
-import React, {useState, useEffect, createContext} from "react";
+import React, {useState, useEffect, createContext, useMemo} from "react";
 import axios from "axios";
+import { withCookies } from "react-cookie";
 import {MainUrl} from "../URL";
 
 export const ApiContext = createContext();
@@ -8,6 +9,7 @@ const url = MainUrl
 export const GetBlogs = (props) => {
     const [blogs, setBlog] = useState([]);
     const [selectedBlog, setSelectedBlog] = useState([]);
+    const [urlDetail, setUrlDetail] = useState([])
     const [detail, setDetail] = useState(false)
     const [category, setCategory] = useState('')
 
@@ -19,6 +21,19 @@ export const GetBlogs = (props) => {
 
     }, []);
 
+    const getCategory = (blog) => {
+        if (blog.category === 1) {
+            return 'Python';
+        } else if (blog.category === 2) {
+            return "JavaScript"
+        } else if (blog.category === 3) {
+            return "MachineLearning"
+        }
+        else {
+            return 'その他';
+        }
+    }
+
     const value = {
         blogs,
         selectedBlog,
@@ -26,7 +41,10 @@ export const GetBlogs = (props) => {
         detail,
         setDetail,
         category,
-        setCategory
+        setCategory,
+        urlDetail,
+        setUrlDetail,
+        getCategory,
     }
 
     return (
@@ -37,3 +55,4 @@ export const GetBlogs = (props) => {
     )
 }
 
+export default withCookies(GetBlogs)

@@ -8,8 +8,7 @@
     display: block; }
   .blog-item-box .blog-item {
     display: flex;
-    margin-top: 20px; }
-    .blog-item-box .blog-item p {
-      padding-left: 10px; }
+    margin-top: 20px;
+    margin-right: 20px; }
 
 /*# sourceMappingURL=Content.css.map */
