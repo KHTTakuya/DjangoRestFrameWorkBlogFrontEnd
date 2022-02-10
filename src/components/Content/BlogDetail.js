@@ -1,7 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
 import {ApiContext} from "../../context/ApiContext";
 import ReactMarkdown from "react-markdown";
-
 import Box from "@mui/material/Box";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import {Button} from "@mui/material";

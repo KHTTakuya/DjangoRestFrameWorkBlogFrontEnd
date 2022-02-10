@@ -14,7 +14,7 @@ export const GetBlogs = (props) => {
     const [category, setCategory] = useState('')
 
     useEffect(() => {
-        axios.get(`${url}/blog/`, {})
+        axios.get(`${url}/blog`, {})
             .then((res) => {
                 setBlog(res.data)
             });

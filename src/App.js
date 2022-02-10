@@ -1,11 +1,10 @@
-import GetBlogs, {ApiContext} from "./context/ApiContext";
+import GetBlogs from "./context/ApiContext";
 import './App.css';
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import {NavBar} from "./components/NavBar/NavBar";
@@ -41,6 +40,9 @@ function App() {
                                   </Route>
                                   <Route path='/category=2'>
                                       <CategoryBlogList category={2} />
+                                  </Route>
+                                  <Route path='/category=3'>
+                                      <CategoryBlogList category={3} />
                                   </Route>
                               </Switch>
                           </Grid>
